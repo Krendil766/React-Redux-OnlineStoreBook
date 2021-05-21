@@ -1,0 +1,5 @@
+const ACTIONSTYPES = {
+    BOOK_LOADED:'BOOK_LOADED',
+}
+
+export default ACTIONSTYPES;
