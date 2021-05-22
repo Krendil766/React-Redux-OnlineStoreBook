@@ -5,8 +5,6 @@ import { bookAddedToCart, bookMinusToCart, bookDeleteToCart } from '../../action
 import './style.css';
 
 const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) => {
-  console.log(items);
-
   const renderRow = (item, idx) => {
     const { id, title, count, total } = item;
     return (
@@ -64,7 +62,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
 };
 
 
-const mapStateToProps = ({ cartItems, orderTotal }) => {
+const mapStateToProps = ({ shoppingCart: { cartItems, orderTotal } }) => {
   return {
     items: cartItems,
     total: orderTotal
