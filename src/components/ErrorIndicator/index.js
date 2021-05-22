@@ -1,7 +1,7 @@
-const ErrorIndicator = () => {
+const ErrorIndicator = ({error}) => {
     return (
         <div className="error-indicator">
-            Error
+            {error}
         </div>
     )
 }
